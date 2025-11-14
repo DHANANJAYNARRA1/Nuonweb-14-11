@@ -19,21 +19,31 @@ async function sendUserConfirmationEmail(email, fullName, data) {
   await transporter.sendMail({
     from: process.env.EMAIL_USER,
     to: email,
-    subject: 'Welcome to NUON - Registration Confirmed!',
+    subject: 'Thank you for showing interest in NUON 💜',
     html: `
-      <h1>Thank you for registering, ${fullName}!</h1>
-      <p>Your registration for NUON has been confirmed.</p>
-      <p>Details:</p>
-      <ul>
-        <li>Name: ${fullName}</li>
-        <li>Phone: +91 ${phoneNumber}</li>
-        <li>Email: ${email}</li>
-        <li>Hospital: ${hospital || 'Not specified'}</li>
-        <li>Specialization: ${specialization}</li>
-        <li>Experience: ${experience}</li>
-        <li>Interests: ${interestsStr}</li>
-      </ul>
-      <p>We'll be in touch soon with more information!</p>
+       <h2>Dear ${fullName},</h2>
+
+    <p>Your registration for <strong>NUON</strong> has been confirmed.</p>
+
+    <p>
+      Thank you for showing interest in <strong>NUON – Nurses of Nightingale</strong>.
+      We’re building a space made 100% for nurses — to help you learn, connect,
+      and focus on your wellbeing.
+    </p>
+
+    <p>
+      You’ll be among the first to know when early access opens.
+      We can’t wait to welcome you to NUON — where every nurse can truly flourish.
+    </p>
+
+    <br><br>
+
+    <p>Warm regards,<br>
+    <strong>Team NUON</strong></p>
+
+    <p> Visit our Website</p>
+      
+      
     `,
   });
 }

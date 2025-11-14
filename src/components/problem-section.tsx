@@ -1,23 +1,22 @@
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef } from "react";
-import { burnoutImage, isolatedImage, fragmentedImage } from "../assets/images";
 
 const challenges = [
   {
-    image: fragmentedImage,
+    image: "/images/img3.jpg",
     title: "Your Growth is Fragmented",
     highlight: "Fragmented",
     description: "With no single, trusted system, you're forced to hunt for courses across clunky portals. This scatters your achievements, buries your certificates in emails, and leaves your real opportunities lost in the chaos.",
   },
   {
-    image: isolatedImage,
+    image: "/images/img2.jpg",
     title: "You're Professionally Isolated",
     highlight: "Isolated",
     description: "You have real questions about your next career step, but who can you ask? There's no clear, trusted path to find a mentor. You're left to navigate the biggest moments of your career completely on your own.",
   },
   {
-    image: burnoutImage,
+    image: "/images/img4.jpg",
     title: "You're Burned Out, Not Nourished",
     highlight: "Burned Out",
     description: "The stress of the shift follows you home. The mental load is constant, and 'burnout' feels less like a buzzword and more like your daily reality. There is no dedicated, professional space for you to be nourished.",
@@ -59,9 +58,9 @@ export function ProblemSection() {
               >
                 <div className="mb-6 overflow-hidden rounded-2xl shadow-xl">
                   <img
-                    src={challenge.image}
+                    src={`${challenge.image}?v=1`}
                     alt={challenge.title}
-                    className="w-full h-48 sm:h-56 md:h-64 lg:h-72 object-cover"
+                    className="w-full h-56 sm:h-60 md:h-62 lg:h-70 object-cover"
                   />
                 </div>
                 <div className="flex flex-col items-center mb-4">

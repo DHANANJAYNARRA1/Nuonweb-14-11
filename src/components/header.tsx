@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
-import { nuonLogo } from "../assets/images";
 
 interface HeaderProps {
   onJoinWaitlist: () => void;
@@ -25,9 +24,9 @@ export function Header({ onJoinWaitlist }: HeaderProps) {
           {/* Logo */}
           <div className="flex items-center">
             <img
-              src={nuonLogo}
+              src="/images/nuon logooo.svg"
               alt="NUON - Nurses United Opportunities Nourished"
-              className="h-16 w-auto object-contain"
+              className="h-16 w-28 object-contain drop-shadow-md hover:scale-105 transition-transform duration-200"
             />
           </div>
 

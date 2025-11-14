@@ -2,7 +2,6 @@ import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { nuonLogo, indianNurseImage } from "../assets/images";
 
 export function ContactSection() {
   const ref = useRef(null);
@@ -32,11 +31,13 @@ export function ContactSection() {
             className="space-y-8"
           >
             <div className="flex items-center justify-center md:justify-start mb-8">
-              <img
-                src={nuonLogo}
-                alt="NUON"
-                className="h-20 w-auto object-contain"
-              />
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-3 shadow-xl border border-purple-300">
+                <img
+                  src="/images/nuon logooo.svg"
+                  alt="NUON"
+                  className="h-20 w-32 object-contain"
+                />
+              </div>
             </div>
 
             <div className="backdrop-blur-md bg-white/60 border border-white/80 rounded-2xl p-6 shadow-xl">
@@ -46,8 +47,8 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-purple-900 mb-2">Email</h3>
-                  <p className="text-purple-700">support@nuon.app</p>
-                  <p className="text-purple-700">partnerships@nuon.app</p>
+                  <p className="text-purple-700">infonuonhub@gmail.com</p>
+                  <p className="text-purple-700">ascidglobal@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -59,7 +60,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-purple-900 mb-2">Phone</h3>
-                  <p className="text-purple-700">+91 (800) 123-4567</p>
+                  <p className="text-purple-700">+91 9100777107</p>
                   <p className="text-purple-600 text-sm">Mon-Fri, 9am-6pm IST</p>
                 </div>
               </div>
@@ -72,7 +73,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-purple-900 mb-2">Location</h3>
-                  <p className="text-purple-700">Mumbai, Maharashtra</p>
+                  <p className="text-purple-700">Hyderabad, Telangana</p>
                   <p className="text-purple-700">India</p>
                 </div>
               </div>
@@ -88,7 +89,7 @@ export function ContactSection() {
           >
             <div className="backdrop-blur-md bg-white/60 border border-white/80 rounded-2xl p-4 shadow-xl w-full">
               <img
-                src={indianNurseImage}
+                src="/images/indian-nurse.jpg"
                 alt="NUON Healthcare Professional"
                 className="w-full h-full object-cover rounded-xl"
               />

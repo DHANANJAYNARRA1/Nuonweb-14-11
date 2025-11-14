@@ -1,5 +1,4 @@
 import { Linkedin, Twitter, Instagram } from "lucide-react";
-import { nuonLogo } from "../assets/images";
 
 export function Footer() {
   return (
@@ -8,11 +7,11 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand Column */}
           <div>
-            <div className="mb-3 bg-white rounded-xl p-3 inline-block">
+            <div className="mb-3 bg-white rounded-xl p-5 inline-block shadow-xl border-2 border-purple-200">
               <img
-                src={nuonLogo}
+                src="/images/nuon logooo.svg"
                 alt="NUON - Nurses United Opportunities Nourished"
-                className="h-16 w-auto object-contain"
+                className="h-20 w-40 object-contain"
               />
             </div>
             <p className="text-white/70 text-sm">
@@ -52,21 +51,21 @@ export function Footer() {
             <h4 className="text-white mb-4">Connect With Us</h4>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://linkedin.com/company/dschoolglobal"
                 className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://twitter.com/dschoolglobal"
                 className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://instagram.com/dschool_hyderabad"
                 className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
                 aria-label="Instagram"
               >

@@ -3,7 +3,6 @@ import { useInView } from "motion/react";
 import { useRef } from "react";
 import { Users } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { ozoneHospitalLogo } from "../assets/images";
 
 export function SocialProofSection() {
   const ref = useRef(null);
@@ -32,7 +31,7 @@ export function SocialProofSection() {
             <p className="text-purple-700 text-sm mb-4">Proudly in collaboration with</p>
             <div className="flex items-center justify-center mb-6 bg-white rounded-xl p-4">
               <img
-                src={ozoneHospitalLogo}
+                src="/images/ozon.png"
                 alt="Ozone Hospital"
                 className="h-16 w-auto object-contain"
               />

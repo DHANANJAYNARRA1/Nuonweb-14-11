@@ -114,32 +114,6 @@ app.post('/api/nurse/apply', async (req, res) => {
     const result = await saveNurseApplication(req.body);
     console.log('Saved successfully, ID:', result.id);
 
-    // Call external API to send emails (as per senior's code)
-    try {
-      const data = JSON.stringify({
-        "name": name,
-        "mobile": mobile,
-        "email": email,
-        "specilization": specialization, // Note: keeping the typo as in original code
-        "hospital": hospital,
-        "experience": experience,
-        "applied_for": applied_for
-      });
-
-      const config = {
-        method: 'post',
-        url: 'https://api.nuonhub.com/nurse/apply',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        data: data
-      };
-
-      const response = await axios(config);
-      console.log('External API response:', JSON.stringify(response.data));
-    } catch (apiErr) {
-      console.error('Failed to call external API:', apiErr);
-    }
 
     res.status(201).json({
       message: 'Nurse application submitted successfully',
@@ -161,8 +135,9 @@ app.get('/api/nurse/applications', async (req, res) => {
   }
 });
 
-// Serve static files from build
+// Serve static files from build and public
 app.use(express.static(path.join(__dirname, '../build')));
+app.use(express.static(path.join(__dirname, '../public')));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../build', 'index.html'));
 });

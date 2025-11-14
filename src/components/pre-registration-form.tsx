@@ -75,6 +75,9 @@ export function PreRegistrationForm() {
       return;
     }
 
+    // Log hospital field for debugging
+    console.log("Hospital field value:", data.hospital);
+
     // Combine form data with selected values
     const fullData = {
       ...data,
@@ -230,14 +233,17 @@ export function PreRegistrationForm() {
               {/* Current Hospital/Clinic */}
               <div>
                 <Label htmlFor="hospital" className="text-white mb-2 block">
-                  Current Hospital/Clinic (Optional)
+                  Current Hospital/Clinic *
                 </Label>
                 <Input
                   id="hospital"
-                  {...register("hospital")}
+                  {...register("hospital", { required: "Hospital/Clinic is required" })}
                   className="bg-white/90 border-white/50 text-purple-900 placeholder:text-purple-400"
                   placeholder="Enter your hospital or clinic name"
                 />
+                {errors.hospital && (
+                  <p className="text-red-200 text-sm mt-1">{errors.hospital.message}</p>
+                )}
               </div>
 
               {/* Nursing Specialization */}

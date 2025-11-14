@@ -1,6 +1,5 @@
 import { motion, AnimatePresence } from "motion/react";
 import { Button } from "./ui/button";
-import { indianNurseImage } from "../assets/images";
 import { useState, useEffect } from "react";
 
 interface HeroSectionProps {
@@ -155,7 +154,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
               ></motion.div>
 
               <motion.img
-                src={indianNurseImage}
+                src="/images/indian-nurse.jpg"
                 alt="Smiling Indian nurse"
                 className="relative z-10 w-full h-auto rounded-3xl shadow-2xl"
                 whileHover={{ scale: 1.02 }}
