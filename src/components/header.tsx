@@ -22,11 +22,11 @@ export function Header({ onJoinWaitlist }: HeaderProps) {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="items-right">
             <img
-              src="/images/nuon logooo.svg"
+              src="/images/logocrop.png"
               alt="NUON - Nurses United Opportunities Nourished"
-              className="h-16 w-28 object-contain drop-shadow-md hover:scale-105 transition-transform duration-200"
+              className="h-12 w-24 md:h-28 md:w-48 object-contain drop-shadow-lg hover:scale-105 transition-transform duration-200"
             />
           </div>
 

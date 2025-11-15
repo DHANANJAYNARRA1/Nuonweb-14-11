@@ -42,7 +42,7 @@ export function ProblemSection() {
             </div>
           </div>
           <p className="text-purple-700 text-lg md:text-xl max-w-3xl mx-auto">
-            We understand the challenges. Your career feels isolated, your growth is fragmented, and you feel more 'burned out' than 'nourished.'
+            We understand the challenges. Your career feels isolated, your growth is fragmented, and you feel more 'burned out' than 'empowered.'
           </p>
         </motion.div>
 
@@ -60,7 +60,7 @@ export function ProblemSection() {
                   <img
                     src={`${challenge.image}?v=1`}
                     alt={challenge.title}
-                    className="w-full h-56 sm:h-60 md:h-62 lg:h-70 object-cover"
+                    className="w-full h-56 sm:h-54 md:h-72 lg:h-80 object-contain rounded-2xl"
                   />
                 </div>
                 <div className="flex flex-col items-center mb-4">

@@ -51,7 +51,7 @@ export function SolutionSection() {
         >
           <div className="flex justify-center mb-6">
             <div className="px-6 py-3 bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-600 rounded-xl shadow-2xl">
-              <h2 className="text-white">Get United. Get Nourished. Get Nuon.</h2>
+              <h2 className="text-white">Get Nuon. Get United. Get Nurtured.</h2>
             </div>
           </div>
           <p className="text-purple-700 text-lg md:text-xl max-w-3xl mx-auto">

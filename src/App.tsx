@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Toaster } from "./components/ui/sonner";
 import { Header } from "./components/header";
 import { HeroSection } from "./components/hero-section";
@@ -23,6 +24,17 @@ export default function App() {
       });
     }
   };
+
+  // Handle URL hash navigation on page load
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash === '#registration-form') {
+      // Small delay to ensure the page is fully loaded
+      setTimeout(() => {
+        scrollToForm();
+      }, 500);
+    }
+  }, []);
 
   return (
     <div className="min-h-screen">

@@ -48,7 +48,7 @@ export function ContactSection() {
                 <div>
                   <h3 className="text-purple-900 mb-2">Email</h3>
                   <p className="text-purple-700">infonuonhub@gmail.com</p>
-                  <p className="text-purple-700">ascidglobal@gmail.com</p>
+                 <p className="text-purple-700">dschool@sims.healthcare</p>
                 </div>
               </div>
             </div>
@@ -61,7 +61,7 @@ export function ContactSection() {
                 <div>
                   <h3 className="text-purple-900 mb-2">Phone</h3>
                   <p className="text-purple-700">+91 9100777107</p>
-                  <p className="text-purple-600 text-sm">Mon-Fri, 9am-6pm IST</p>
+                
                 </div>
               </div>
             </div>
@@ -73,7 +73,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-purple-900 mb-2">Location</h3>
-                  <p className="text-purple-700">Hyderabad, Telangana</p>
+                 <p className="text-purple-700">Amar Society, Plot No.26, Kavuri Hills, Madhapur, Telangana 500033</p>
                   <p className="text-purple-700">India</p>
                 </div>
               </div>

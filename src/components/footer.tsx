@@ -7,11 +7,11 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand Column */}
           <div>
-            <div className="mb-3 bg-white rounded-xl p-5 inline-block shadow-xl border-2 border-purple-200">
+            <div className="mb-3 bg-white rounded-2xl p-6 inline-block shadow-2xl border-2 border-purple-200 hover:shadow-purple-500/20 transition-shadow duration-300">
               <img
                 src="/images/nuon logooo.svg"
                 alt="NUON - Nurses United Opportunities Nourished"
-                className="h-20 w-40 object-contain"
+                className="h-24 w-48 object-contain"
               />
             </div>
             <p className="text-white/70 text-sm">

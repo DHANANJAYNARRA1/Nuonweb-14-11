@@ -11,10 +11,11 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
   
   const animatedSequence = [
     { word: "Mentorship", color: "from-yellow-300 via-yellow-200 to-yellow-300" },
-    { word: "Wellbeing", color: "from-cyan-300 via-cyan-200 to-cyan-300" },
+    { word: "Health", color: "from-cyan-300 via-cyan-200 to-cyan-300" },
     { word: "Growth", color: "from-pink-300 via-pink-200 to-pink-300" },
     { word: "Events", color: "from-green-300 via-green-200 to-green-300" },
     { word: "NUON", color: "from-purple-300 via-purple-200 to-purple-300" },
+    { word: "Fitness", color: "from-pink-300 via-pink-200 to-pink-300" },
   ];
 
   useEffect(() => {
@@ -60,22 +61,22 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center lg:text-left order-2 lg:order-1"
+            className="text-center lg:text-center order-2 lg:order-1"
           >
             {/* Smaller Headline */}
-            <motion.h1 
-              className="text-white drop-shadow-2xl mb-8 text-2xl md:text-3xl"
+            <motion.h1
+              className="text-white drop-shadow-2xl mb-4 md:mb-6 text-2xl justify-end md:text-3xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               NUON is 100% for Nurses.
             </motion.h1>
-            
+
             {/* Animated sequence - "for you" constant */}
-            <div className="h-20 md:h-24 flex items-center justify-center lg:justify-start mb-6">
-              <div className="text-4xl md:text-5xl lg:text-6xl drop-shadow-2xl grid grid-cols-[auto_auto] gap-3 items-baseline">
-                <div className="text-center lg:text-left">
+            <div className="h-20 md:h-24 flex items-center justify-center lg:justify-center mb-6">
+              <div className="text-4xl md:text-5xl lg:text-6xl drop-shadow-2xl grid grid-cols-[auto_auto] gap-6 items-baseline">
+                <div className="text-center lg:text-center">
                   <AnimatePresence mode="wait">
                     <motion.span
                       key={currentIndex}
@@ -97,8 +98,8 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
             </div>
 
             {/* Value Proposition */}
-            <motion.p 
-              className="text-white/95 text-lg md:text-xl mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
+            <motion.p
+              className="text-white/95 text-lg md:text-xl mb-8 max-w-2xl mx-auto lg:mx-auto leading-relaxed"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.6 }}
@@ -112,7 +113,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start"
+              className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-center"
             >
               <Button
                 onClick={onJoinWaitlist}
@@ -136,7 +137,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="flex justify-center lg:justify-end order-1 lg:order-2"
+            className="flex justify-center lg:justify-center order-1 lg:order-2"
           >
             <div className="relative w-full max-w-md lg:max-w-lg">
               {/* Animated glow rings */}

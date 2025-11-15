@@ -41,9 +41,9 @@ async function sendUserConfirmationEmail(email, fullName, data) {
     <p>Warm regards,<br>
     <strong>Team NUON</strong></p>
 
-    <p> Visit our Website</p>
-      
-      
+    <p>
+      <a href="https://www.nuonhub.com" style="color: #7c3aed; text-decoration: none;">Visit NUON Website</a>
+    </p>
     `,
   });
 }

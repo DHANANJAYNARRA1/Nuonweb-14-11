@@ -148,7 +148,7 @@ export function PreRegistrationForm() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-white mb-4 text-4xl md:text-5xl lg:text-6xl">Be the First to Join Nuon.</h2>
+          <h2 className="text-white mb-4 text-4xl md:text-5xl lg:text-6xl">Be the First to Join NUON.</h2>
           <p className="text-white/90 text-lg md:text-xl max-w-3xl mx-auto">
             We're launching soon. Sign up for the exclusive waitlist to get early access and <strong>one free course</strong>.
           </p>
