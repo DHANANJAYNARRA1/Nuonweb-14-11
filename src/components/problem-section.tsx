@@ -60,7 +60,7 @@ export function ProblemSection() {
                   <img
                     src={`${challenge.image}?v=1`}
                     alt={challenge.title}
-                    className="w-full h-56 sm:h-54 md:h-72 lg:h-80 object-contain rounded-2xl"
+                    className="w-full h-64 sm:h-72 md:h-80 lg:h-96 object-contain rounded-2xl"
                   />
                 </div>
                 <div className="flex flex-col items-center mb-4">

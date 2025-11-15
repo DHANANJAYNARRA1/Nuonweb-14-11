@@ -70,7 +70,7 @@ export function SocialProofSection() {
           <div className="backdrop-blur-md bg-white/60 border border-white/80 rounded-2xl p-8 md:p-12 shadow-xl">
             <div className="flex flex-col md:flex-row items-center gap-6 mb-6">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1654762930571-dcf2ebc11542?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBudXJzZSUyMGhvc3BpdGFsfGVufDF8fHx8MTc2Mjg0NTgxOHww&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/images/indian-nurse.jpg"
                 alt="Priya S."
                 className="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg"
               />
