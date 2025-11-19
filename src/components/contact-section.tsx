@@ -31,11 +31,32 @@ export function ContactSection() {
             className="space-y-8"
           >
             <div className="flex items-center justify-center md:justify-start mb-8">
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-3 shadow-xl border border-purple-300">
+              <div
+                style={{
+                  padding: '12px',
+                  borderRadius: '16px',
+                  boxShadow: '0 2px 12px rgba(0, 0, 0, 0.1)',
+                  transition: 'all 0.3s ease',
+                  display: 'inline-block'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.15)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 2px 12px rgba(0, 0, 0, 0.1)';
+                }}
+              >
                 <img
-                  src="/images/nuon logooo.svg"
+                  src="/images/rounded logo.png"
                   alt="NUON"
-                  className="h-20 w-32 object-contain"
+                  className="object-contain"
+                  style={{
+                    height: '80px',
+                    width: 'auto',
+                    borderRadius: '12px'
+                  }}
                 />
               </div>
             </div>

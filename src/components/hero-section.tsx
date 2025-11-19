@@ -75,7 +75,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
 
             {/* Animated sequence - "for you" constant */}
             <div className="h-20 md:h-24 flex items-center justify-center lg:justify-center mb-6">
-              <div className="text-4xl md:text-5xl lg:text-6xl drop-shadow-2xl grid grid-cols-[auto_auto] gap-6 items-baseline">
+              <div className="text-4xl md:text-5xl lg:text-6xl drop-shadow-2xl grid grid-cols-[auto_auto] gap-3 items-baseline">
                 <div className="text-center lg:text-center">
                   <AnimatePresence mode="wait">
                     <motion.span
